@@ -1,6 +1,6 @@
 {
   "name": "weapp-new-user-guide",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "用于微信小程序的用户指引组件",
   "main": "index.js",
   "miniprogram": "lib/weapp/components",
@@ -9,5 +9,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heimeiyaodagongzai/weapp-new-user-guide"
+  },
   "license": "ISC"
 }

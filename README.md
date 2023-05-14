@@ -1,9 +1,17 @@
 # 微信小程序新手引导组件
-一个简单的微信小程序新手引导组件，支持镂空引导元素
+一个简单的微信小程序新手引导组件，支持镂空引导元素，不遮挡引导元素的操作，支持定义样式
 
 ![img](http://qiniuyun.hmydgz.top/doc/img/new-user-guide-priview.gif)
 
 # 引入
+
+```bash
+npm i weapp-new-user-guide
+```
+
+安装完在小程序开发者工具中点击菜单栏：工具 -> 构建 npm
+
+在需要使用的页面的 `json` 文件中添加配置
 ```json
 {
   "usingComponents": {
