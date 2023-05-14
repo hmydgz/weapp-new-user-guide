@@ -1,0 +1,19 @@
+<view wx:if="{{ show }}" style="--animationTime: {{ animationTime / 1000 }}s;">
+  <view class="mask">
+    <view id="NewUserGuideTop" class="pf transition" style="width: 100vw;height: 100vh;top: calc({{ targetNodeInfo.top - maskPadding }}px - 100vh); left: 0;{{ maskPublicStyle }}"></view>
+    <view id="NewUserGuideRight" class="pf transition" style="width: 100vw;height: {{ targetNodeInfo.height + (maskPadding * 2) }}px;top: {{ targetNodeInfo.top - maskPadding }}px;left: {{ targetNodeInfo.right + maskPadding }}px;{{ maskPublicStyle }}"></view>
+    <view id="NewUserGuideBottom" class="pf transition" style="width: 100vw;height: 100vh;top: {{ targetNodeInfo.bottom + maskPadding }}px;left: 0;{{ maskPublicStyle }}"></view>
+    <view id="NewUserGuideLeft" class="pf transition" style="width: 100vw;height: {{ targetNodeInfo.height + (maskPadding * 2) }}px;top: {{ targetNodeInfo.top - maskPadding }}px;right: calc(100vw - {{ targetNodeInfo.left - maskPadding }}px);{{ maskPublicStyle }}"></view>
+    <view wx:if="{{ !hollowOut }}" class="pf" style="width: {{ targetNodeInfo.width + (maskPadding * 2) }}px;height: {{ targetNodeInfo.height + (maskPadding * 2) }}px;top: {{ targetNodeInfo.top - maskPadding }}px;left: {{ targetNodeInfo.left - maskPadding }}px;z-index: 3000;"
+      bindtap="nextStep"></view>
+  </view>
+
+  <!-- 提示 + 操作 -->
+  <view id="NewUserGuideTips" class="pf px_30 pt_20 transition" style="width: 100vw;left: 0;z-index: {{ zIndex + 1 }};box-sizing: border-box;{{ tipsStyle }}">
+    <view class="mb_20 padding_20 br_10 t_c_white text_wrap bg_b {{ tipsWrapperClass }}">{{ tips }}</view>
+    <view class="d_f gap_20">
+      <view wx:if="{{ currentSelectorIndex !== options.length - 1 }}" class="flex_1 tc py_15 br_10 t_c_white border_white {{ endBtnClass }}" bindtap="handleStepEnd">{{ jumpAllBtnText }}</view>
+      <view class="flex_1 tc py_15 br_10 bg_w t_c_blue border_white {{ nextBtnClass }}" bindtap="nextStep">{{ currentSelectorIndex !== options.length - 1 ? nextBtnText : endBtnText }}</view>
+    </view>
+  </view>
+</view>

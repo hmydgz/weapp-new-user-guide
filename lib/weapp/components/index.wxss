@@ -1,0 +1,77 @@
+
+
+.transition {
+  transition: all var(--animationTime, 0.2s);
+}
+
+.pf {
+  position: fixed;
+}
+
+.flex_1 {
+  flex: 1;
+}
+
+.padding_20 {
+  padding: 20rpx;
+}
+
+.t_c_blue {
+  --color-primary: rgb(0, 102, 255);
+  color: var(--color-primary);
+}
+
+.tc {
+  text-align: center;
+}
+
+.px_30 {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+.pt_20 {
+  padding-top: 20rpx;
+}
+
+.t_c_white {
+  color: #fff;
+}
+
+.mb_20 {
+  margin-bottom: 20rpx;
+}
+
+.br_10 {
+  border-radius: 10rpx;
+}
+
+.text_wrap {
+  word-wrap: break-word;
+  word-break: normal;
+}
+
+.d_f {
+  display: flex;
+}
+
+.gap_20 {
+  gap: 20rpx;
+}
+
+.py_15 {
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+}
+
+.bg_w {
+  background-color: #fff;
+}
+
+.bg_b {
+  background-color: rgb(89, 147, 255);
+}
+
+.border_white {
+  border: 1px solid #fff;
+}
