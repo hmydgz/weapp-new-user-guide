@@ -1,4 +1,5 @@
 # 微信小程序新手引导组件
+一个简单的微信小程序新手引导组件，支持镂空引导元素
 
 ![img](http://qiniuyun.hmydgz.top/doc/img/new-user-guide-priview.gif)
 
