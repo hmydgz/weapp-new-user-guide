@@ -1,6 +1,6 @@
 {
   "name": "weapp-new-user-guide",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "用于微信小程序的用户指引组件",
   "main": "index.js",
   "miniprogram": "lib/weapp/components",
