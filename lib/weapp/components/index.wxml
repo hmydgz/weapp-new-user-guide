@@ -4,7 +4,7 @@
     <view id="NewUserGuideRight" class="pf transition" style="width: 100vw;height: {{ targetNodeInfo.height + (maskPadding * 2) }}px;top: {{ targetNodeInfo.top - maskPadding }}px;left: {{ targetNodeInfo.right + maskPadding }}px;{{ maskPublicStyle }}"></view>
     <view id="NewUserGuideBottom" class="pf transition" style="width: 100vw;height: 100vh;top: {{ targetNodeInfo.bottom + maskPadding }}px;left: 0;{{ maskPublicStyle }}"></view>
     <view id="NewUserGuideLeft" class="pf transition" style="width: 100vw;height: {{ targetNodeInfo.height + (maskPadding * 2) }}px;top: {{ targetNodeInfo.top - maskPadding }}px;right: calc(100vw - {{ targetNodeInfo.left - maskPadding }}px);{{ maskPublicStyle }}"></view>
-    <view wx:if="{{ !hollowOut }}" class="pf" style="width: {{ targetNodeInfo.width + (maskPadding * 2) }}px;height: {{ targetNodeInfo.height + (maskPadding * 2) }}px;top: {{ targetNodeInfo.top - maskPadding }}px;left: {{ targetNodeInfo.left - maskPadding }}px;z-index: 3000;"
+    <view wx:if="{{ !hollowOut }}" class="pf" style="width: {{ targetNodeInfo.width + (maskPadding * 2) }}px;height: {{ targetNodeInfo.height + (maskPadding * 2) }}px;top: {{ targetNodeInfo.top - maskPadding }}px;left: {{ targetNodeInfo.left - maskPadding }}px;z-index: {{ zIndex }};"
       bindtap="nextStep"></view>
   </view>
 
